@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import CarouselView
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var carouselView: CarouselView!
+    
+    var items = ["Landscape1","Landscape2","Landscape3"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        carouselView.setCarouselItems(self.items)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

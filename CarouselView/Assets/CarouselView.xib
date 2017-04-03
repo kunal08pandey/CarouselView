@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarouselView" customModule="CarouselView">
+            <connections>
+                <outlet property="galleryView" destination="XC7-qh-HCM" id="che-T3-xWV"/>
+                <outlet property="thumbnailView" destination="fjF-dj-QTh" id="ReF-0P-9hV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XC7-qh-HCM">
+                    <rect key="frame" x="10" y="10" width="355" height="238"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qf7-f9-cdN">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fjF-dj-QTh">
+                    <rect key="frame" x="30" y="258" width="315" height="65"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="RsA-sy-GSS"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="emd-fJ-zli">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XC7-qh-HCM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="4AR-MG-0Aj"/>
+                <constraint firstItem="fjF-dj-QTh" firstAttribute="top" secondItem="XC7-qh-HCM" secondAttribute="bottom" constant="10" id="JbO-lP-89i"/>
+                <constraint firstItem="fjF-dj-QTh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PKX-vk-PW3"/>
+                <constraint firstAttribute="bottom" secondItem="fjF-dj-QTh" secondAttribute="bottom" constant="10" id="QXJ-eN-eG4"/>
+                <constraint firstItem="fjF-dj-QTh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="bty-lz-Pwc"/>
+                <constraint firstAttribute="trailing" secondItem="fjF-dj-QTh" secondAttribute="trailing" constant="30" id="cG0-l1-XuQ"/>
+                <constraint firstAttribute="trailing" secondItem="XC7-qh-HCM" secondAttribute="trailing" constant="10" id="hCw-IW-Ham"/>
+                <constraint firstItem="XC7-qh-HCM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="zIm-3M-zpe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="25.5" y="-66.5"/>
+        </view>
+    </objects>
+</document>

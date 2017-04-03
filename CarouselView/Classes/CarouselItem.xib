@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarouselItem" id="gTV-IL-0wX" customClass="CarouselItem" customModule="CarouselView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c5U-NX-T6S">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="c5U-NX-T6S" secondAttribute="trailing" id="4pb-gP-4N6"/>
+                <constraint firstItem="c5U-NX-T6S" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XSc-IL-Sdw"/>
+                <constraint firstItem="c5U-NX-T6S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ofo-Qs-0G1"/>
+                <constraint firstAttribute="bottom" secondItem="c5U-NX-T6S" secondAttribute="bottom" id="pEa-HX-SfI"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="c5U-NX-T6S" id="mL0-1q-aki"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

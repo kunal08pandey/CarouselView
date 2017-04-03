@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CarouselView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CarouselView.'
+  s.summary          = 'CarouselView is a custom control just like iCarousel.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,25 +17,25 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'This carouselView is a custom carousel built in swift 3 just like iCarousel'
 
   s.homepage         = 'https://github.com/kunal08pandey/CarouselView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kunal08pandey' => 'kunal08.pandey@gmail.com' }
   s.source           = { :git => 'https://github.com/kunal08pandey/CarouselView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # s.social_media_url = 'https://twitter.com/kunal08pandey'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'CarouselView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'CarouselView' => ['CarouselView/Assets/*.png']
-  # }
+   s.resource_bundles = {
+'CarouselView' => ['CarouselView/Assets/*.png','CarouselView/Classes/**/*.xib'
+]
+   }
 
+#  s.resources = 'CarouselView/Classes/**/*.xib'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

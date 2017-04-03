@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		211AE917E81511283E4EB302 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		211AE917E81511283E4EB302 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		21B5512E77A607248C705350 /* Pods_CarouselView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarouselView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		231B1834416D1385971D7B80 /* Pods-CarouselView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarouselView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarouselView_Tests/Pods-CarouselView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CarouselView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarouselView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,8 +41,8 @@
 		607FACE51AFB9204008FA782 /* CarouselView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		968D314C786CBBE7B669E7A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A10236F438F70DC234D4E12B /* CarouselView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CarouselView.podspec; path = ../CarouselView.podspec; sourceTree = "<group>"; };
+		968D314C786CBBE7B669E7A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A10236F438F70DC234D4E12B /* CarouselView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CarouselView.podspec; path = ../CarouselView.podspec; sourceTree = "<group>"; };
 		A5F3A79EC4A13805558985EE /* Pods-CarouselView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarouselView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarouselView_Example/Pods-CarouselView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BA12639C29B92320775B3606 /* Pods-CarouselView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarouselView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarouselView_Tests/Pods-CarouselView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DADCA8553559929945774525 /* Pods_CarouselView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarouselView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -497,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CarouselView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -511,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CarouselView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
